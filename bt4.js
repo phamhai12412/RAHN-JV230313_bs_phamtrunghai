@@ -23,10 +23,10 @@ console.log(arr.sort((a, b) => b - a));
 //thật toán sắp xếp ko dùng hàm sort:
 alert("tiếp theo là thuật toán xử lý ko dùng hàm sort");
 let a = taoarr();
-console.log(`mảng bạn vừa đc tạo ngẫu nhiên là:${arr}`);
+console.log(`mảng bạn vừa đc tạo ngẫu nhiên là:${a}`);
 let trunggian = 0;
 for (i = 0; i < a.length - 1; i++) {
-  for (let j = i; j < a.length; j++) {
+  for (let j = i+1; j < a.length; j++) {
     if (a[i] < a[j]) {
       trunggian = a[i];
       a[i] = a[j];
